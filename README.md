@@ -60,7 +60,7 @@ This project consists of three core modules:
 
 ### Hardware Requirements
 
-- RDK X5 development board (10 TOPS BPU compute power).
+- RDK X5 development board (10TOPS BPU compute power).
 - USB camera (for gesture and emotion recognition).
 - Microphone and speaker (for voice interaction).
 - SG90 servo (for head tracking).
@@ -77,28 +77,17 @@ This project consists of three core modules:
 ## Project Structure
 
 ```
-rdk-x5-emotion-robot/
-├── emotion.py             # Emotion recognition main program (BPU accelerated)
-├── main.py                # Robot main control program
-├── xiaohun.py             # Xiaohun voice assistant
+xiaohun/
+├── emotion.py             # Emotion recognition (BPU accelerated)
+├── main.py                # Robot main control
+├── xiaohun.py             # Voice assistant
 ├── http_server.py         # HTTP API server
 ├── requirements.txt       # Python dependencies
-├── emotions/              # Expression animation resource folder
-│   ├── happy/             # Happy animation frames
-│   ├── sad/               # Sad animation frames
-│   ├── angry/             # Angry animation frames
-│   ├── neutral/           # Neutral animation frames
-│   ├── blink/             # Blink animation frames
-│   ├── excited/           # Excited animation frames
-│   ├── dizzy/             # Dizzy animation frames
-│   ├── happy2/            # Happy2 animation frames
-│   ├── happy3/            # Happy3 animation frames
-│   ├── blink2/            # Blink2 animation frames
-│   ├── bootup/            # Bootup animation frames
-│   ├── bootup3/           # Bootup3 animation frames
-│   └── sleep/             # Sleep animation frames
-├── README-cn.md 
-└── README.md              # This file
+├── 3D模型/                # 3D model files for printing
+├── 手机app/               # Mobile app source code
+├── emotions/              # Animation frame resources
+├── README.md              # English docs
+└── README-cn.md           # Chinese docs
 ```
 
 ---
