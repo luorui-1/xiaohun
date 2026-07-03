@@ -1,0 +1,34 @@
+
+# 基础科学计算
+numpy>=1.20.0
+scipy>=1.7.0
+
+# 图像处理
+opencv-python>=4.5.0
+Pillow>=9.0.0
+
+# GUI
+# tkinter 是 Python 标准库，无需安装
+
+# 音频处理
+pyaudio>=0.2.11
+pygame>=2.0.0
+
+# HTTP 服务
+flask>=2.0.0
+flask-cors>=3.0.0
+
+# 系统监控
+psutil>=5.8.0
+
+# 网络请求
+requests>=2.25.0
+
+# 语音合成
+edge-tts>=6.0.0
+
+# 异步支持
+asyncio  # Python 3.8+ 内置
+
+# 硬件 GPIO
+# Hobot.GPIO 是 RDK X5 专用库，需从地平线官方渠道安装
