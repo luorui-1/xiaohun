@@ -8,7 +8,7 @@
 
 1. **情绪识别系统** (`emotion.py`) - 通过BPU加速的YOLOv8s模型实时识别用户表情（开心/难过/生气/平静）
 2. **主控系统** (`main.py`) - 根据表情触发动画、手势控制舵机、查询天气、开关语音助手
-3. **小智语音助手** (`xiaohun.py`) - 提供实时语音交互，支持情绪感知对话
+3. **小混语音助手** (`xiaohun.py`) - 提供实时语音交互，支持情绪感知对话
 
 ##  主要功能
 
@@ -64,28 +64,17 @@
 ## 📁 项目结构
 
 ```
-rdk-x5-emotion-robot/
+xiaohun/
 ├── emotion.py             # 情绪识别主程序（BPU加速）
 ├── main.py                # 机器人主控程序
 ├── xiaohun.py             # 小智语音助手
 ├── http_server.py         # HTTP API服务器
-├── requirements.txt       # Python依赖 
+├── requirements.txt       # Python依赖
+├── 3D模型/                # 机器人3D建模文件
+├── 手机app/               # 手机端控制应用源码
 ├── emotions/              # 表情动画资源文件夹
-│   ├── happy/             # 开心动画帧
-│   ├── sad/               # 难过动画帧
-│   ├── angry/             # 生气动画帧
-│   ├── neutral/           # 平静动画帧
-│   ├── blink/             # 眨眼动画帧
-│   ├── excited/           # 兴奋动画帧
-│   ├── dizzy/             # 眩晕动画帧
-│   ├── happy2/            # 开心2动画帧
-│   ├── happy3/            # 开心3动画帧
-│   ├── blink2/            # 眨眼2动画帧
-│   ├── bootup/            # 启动动画
-│   ├── bootup3/           # 启动动画3
-│   └── sleep/             # 睡眠动画
-├── README.md
-└── README-cn.md              # 本文件
+├── README.md              # 英文版项目说明文档
+└── README-cn.md           # 中文版项目说明文档
 ```
 ##  使用方法
 
